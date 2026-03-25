@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="printout"
+   >
+  <g
+     id="layer1">
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_0.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_0"
+       x="5.2916656"
+       y="2.5802186" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_1.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_1"
+       x="110.29163"
+       y="121.38021" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_2.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_2"
+       x="110.29163"
+       y="180.78023" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_3.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_3"
+       x="5.2916694"
+       y="121.38021" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_4.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_4"
+       x="5.2916694"
+       y="240.18022" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_5.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_5"
+       x="110.29163"
+       y="2.5802186" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_6.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_6"
+       x="5.2916694"
+       y="61.980213" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_7.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_7"
+       x="110.29163"
+       y="61.980213" />
+    <image
+       xlink:href="easter_qr_trail/static/images/qr_8.png"
+       style="stroke-width:2"
+       width="54.239578"
+       height="54.239578"
+       preserveAspectRatio="none"
+       id="image_qr_8"
+       x="5.2916694"
+       y="180.78023" />
+    <image
+       xlink:href="easter_qr_trail/static/images/starter_qr.png"
+       style="stroke-width:1.60974371"
+       width="54.239998"
+       height="54.239998"
+       preserveAspectRatio="none"
+       id="image_qr_starter"
+       x="110.29143"
+       y="240.18001" />
+
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_0.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_0"
+       x="60.020828"
+       y="181.44168" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_1.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_1"
+       x="60.020828"
+       y="122.04166" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_2.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_2"
+       x="60.020828"
+       y="62.64167" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_3.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_3"
+       x="60.020828"
+       y="3.2416737" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_4.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_4"
+       x="165.0209"
+       y="181.44168" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_5.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_5"
+       x="165.0209"
+       y="122.04166" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_6.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_6"
+       x="165.0209"
+       y="62.64167" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_7.jpeg"
+       style="stroke-width:5"
+       width="39.6875"
+       height="52.916668"
+       preserveAspectRatio="none"
+       id="image_egg_7"
+       x="165.0209"
+       y="3.2416737" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_6.jpeg"
+       y="240.84167"
+       x="60.020828"
+       id="image_egg_6b"
+       preserveAspectRatio="none"
+       height="52.916668"
+       width="39.6875"
+       style="stroke-width:5" />
+    <image
+       xlink:href="easter_qr_trail/static/images/egg_7.jpeg"
+       y="240.84167"
+       x="165.0209"
+       id="image_egg_7b"
+       preserveAspectRatio="none"
+       height="52.916668"
+       width="39.6875"
+       style="stroke-width:5" />
+
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect834"
+       width="105"
+       height="59.400002"
+       x="-9.7307134e-07"
+       y="6.8661257e-06" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect954"
+       width="105"
+       height="59.400002"
+       x="-9.7307134e-07"
+       y="59.400005" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect956"
+       width="105"
+       height="59.400002"
+       x="-9.7307134e-07"
+       y="118.8" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect958"
+       width="105"
+       height="59.400002"
+       x="105"
+       y="-2.1937806e-06" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect960"
+       width="105"
+       height="59.400002"
+       x="105"
+       y="59.399998" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect962"
+       width="105"
+       height="59.400002"
+       x="105"
+       y="118.8" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect964"
+       width="105"
+       height="59.400002"
+       x="2.8416259e-06"
+       y="178.20001" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect966"
+       width="105"
+       height="59.400002"
+       x="2.8416259e-06"
+       y="237.60001" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect968"
+       width="105"
+       height="59.400002"
+       x="105"
+       y="178.20001" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#cdcdcd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect970"
+       width="105"
+       height="59.400002"
+       x="105"
+       y="237.60001" />
+  </g>
+</svg>
