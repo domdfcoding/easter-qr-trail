@@ -29,6 +29,11 @@ python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
 package = "easter_qr_trail"
+additional-files = [
+    "recursive-include easter_qr_trail/static *",
+    "recursive-include easter_qr_trail/templates *",
+    "include easter_qr_trail/data.json",
+]
 
 [tool.importcheck]
 

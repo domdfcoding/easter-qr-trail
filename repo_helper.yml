@@ -17,3 +17,13 @@ use_whey: true
 
 python_versions:
   - 3.8
+
+manifest_additional:
+  - recursive-include easter_qr_trail/static *
+  - recursive-include easter_qr_trail/templates *
+  - include easter_qr_trail/data.json
+
+additional_ignore:
+  - 3456395.jpg
+  - state
+  - "*.zip"

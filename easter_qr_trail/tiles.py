@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #
-#  __init__.py
+#  tiles.py
 """
-Interactive Easter trail where scanning QR codes reveals an image.
+Generate individual tiles from a source image.
 """
 #
 #  Copyright © 2026 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -26,21 +26,51 @@ Interactive Easter trail where scanning QR codes reveals an image.
 #  OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
+# stdlib
+import os
+
 # 3rd party
-from domdf_python_tools.paths import PathPlus
+from domdf_python_tools.typing import PathLike
+from split_image import split_image  # type: ignore[import-untyped]
 
-__author__: str = "Dominic Davis-Foster"
-__copyright__: str = "2026 Dominic Davis-Foster"
-__license__: str = "MIT License"
-__version__: str = "0.0.0"
-__email__: str = "dominic@davis-foster.co.uk"
+# this package
+from easter_qr_trail import STATIC_DIR, TILE_COLS, TILE_ROWS
 
-TILE_ROWS = 3
-TILE_COLS = 3
+__all__ = ["generate_tiles", "split_egg_images"]
 
-NUM_FINDS = TILE_ROWS * TILE_COLS
 
-_pkg_root = PathPlus(__file__).parent.abspath()
+def _split_image(source_image: PathLike, rows: int, cols: int, suffix: str) -> None:
+	split_image(
+			source_image,
+			rows,
+			cols,
+			should_square=False,
+			should_cleanup=False,
+			should_quiet=True,
+			output_dir=STATIC_DIR,
+			)
 
-UUID_DATA_FILE = _pkg_root / "data.json"
-STATIC_DIR = _pkg_root / "static"
+	source_image_stem = os.path.splitext(source_image)[0]
+
+	for filename in STATIC_DIR.glob(f"{source_image_stem}*"):
+		filename.rename(filename.parent / filename.name.replace(f"{source_image_stem}_", suffix))
+
+
+def generate_tiles(source_image: PathLike) -> None:
+	"""
+	Generate tiles for the given image.
+
+	:param source_image:
+	"""
+
+	_split_image(source_image, TILE_ROWS, TILE_COLS, '')
+
+
+def split_egg_images(source_image: PathLike) -> None:
+	"""
+	Generate images for the individual easter eggs from the input atlas image.
+
+	:param source_image:
+	"""
+
+	_split_image(source_image, 2, 4, "egg_")

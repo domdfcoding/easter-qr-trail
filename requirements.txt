@@ -1,0 +1,6 @@
+# TODO: Newer split-image complains that columns aren't integer values (since image has odd number of pixels)
+domdf-python-tools>=3.6.0
+flask>=2.2.3
+gunicorn>=20.1.0
+qrcode>=7.4.2
+split-image==2.0.1
