@@ -34,7 +34,7 @@ from domdf_python_tools.typing import PathLike
 from split_image import split_image  # type: ignore[import-untyped]
 
 # this package
-from easter_qr_trail import STATIC_DIR, TILE_COLS, TILE_ROWS
+from easter_qr_trail import IMAGES_DIR, TILE_COLS, TILE_ROWS
 
 __all__ = ["generate_tiles", "split_egg_images"]
 
@@ -47,12 +47,12 @@ def _split_image(source_image: PathLike, rows: int, cols: int, suffix: str) -> N
 			should_square=False,
 			should_cleanup=False,
 			should_quiet=True,
-			output_dir=STATIC_DIR,
+			output_dir=IMAGES_DIR,
 			)
 
 	source_image_stem = os.path.splitext(source_image)[0]
 
-	for filename in STATIC_DIR.glob(f"{source_image_stem}*"):
+	for filename in IMAGES_DIR.glob(f"{source_image_stem}*"):
 		filename.rename(filename.parent / filename.name.replace(f"{source_image_stem}_", suffix))
 
 

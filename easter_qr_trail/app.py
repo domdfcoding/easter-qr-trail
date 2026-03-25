@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 #
-#  __init__.py
+#  app.py
 """
-Interactive Easter trail where scanning QR codes reveals an image.
+Flask webapp.
 """
 #
 #  Copyright © 2026 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -26,22 +26,59 @@ Interactive Easter trail where scanning QR codes reveals an image.
 #  OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
+# stdlib
+from typing import Tuple
+
 # 3rd party
 from domdf_python_tools.paths import PathPlus
+from flask import Flask, render_template, request
 
-__author__: str = "Dominic Davis-Foster"
-__copyright__: str = "2026 Dominic Davis-Foster"
-__license__: str = "MIT License"
-__version__: str = "0.0.0"
-__email__: str = "dominic@davis-foster.co.uk"
+# this package
+from easter_qr_trail import NUM_FINDS, UUID_DATA_FILE
 
-TILE_ROWS = 3
-TILE_COLS = 3
+__all__ = ["home", "qr", "starter"]
 
-NUM_FINDS = TILE_ROWS * TILE_COLS
+app = Flask(__name__)
 
-_pkg_root = PathPlus(__file__).parent.abspath()
+uuid_to_image = {v: k for k, v in UUID_DATA_FILE.load_json().items()}
 
-UUID_DATA_FILE = _pkg_root / "data.json"
-STATIC_DIR = _pkg_root / "static"
-IMAGES_DIR = STATIC_DIR / "images"
+print(uuid_to_image)
+
+state_directory = PathPlus("state")
+state_directory.maybe_make()
+
+
+@app.route('/')
+def home() -> str:
+	return render_template("home.html")
+
+
+@app.route("/qr/")
+def starter() -> str:
+	return render_template("starter.html")
+
+
+@app.route("/qr/<uuid>")
+def qr(uuid: str) -> Tuple[str, int]:
+	user = request.remote_addr
+
+	if user is None:
+		return "Could not determine user", 400
+
+	# Create state file
+	user_state_dir = state_directory / user
+	(user_state_dir).maybe_make()
+	(user_state_dir / uuid_to_image[uuid]).touch()
+
+	# Build current state
+	current_state = [f.name for f in user_state_dir.iterdir()]
+	kwargs = {}
+
+	for n in range(NUM_FINDS):
+		kwargs[f"img_{n}"] = False
+
+	# for image in state[user]:
+	for image in current_state:
+		kwargs[f"img_{image}"] = True
+
+	return render_template("image.html", **kwargs), 200

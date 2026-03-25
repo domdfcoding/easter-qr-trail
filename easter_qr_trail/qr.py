@@ -34,7 +34,7 @@ import uuid
 import qrcode
 
 # this package
-from easter_qr_trail import NUM_FINDS, STATIC_DIR, UUID_DATA_FILE
+from easter_qr_trail import IMAGES_DIR, NUM_FINDS, UUID_DATA_FILE
 
 __all__ = ["generate_qr_codes", "generate_starter_qr"]
 
@@ -46,7 +46,7 @@ def generate_qr_codes(server_address: str) -> None:
 	:param server_address: The address of the server hosting the trail.
 	"""
 
-	STATIC_DIR.maybe_make()
+	IMAGES_DIR.maybe_make()
 
 	server_address = server_address.rstrip('/')
 
@@ -74,7 +74,7 @@ def generate_starter_qr(server_address: str) -> None:
 	:param server_address: The address of the server hosting the trail.
 	"""
 
-	STATIC_DIR.maybe_make()
+	IMAGES_DIR.maybe_make()
 
 	server_address = server_address.rstrip('/')
 
@@ -84,4 +84,4 @@ def generate_starter_qr(server_address: str) -> None:
 
 def _make_qr_code(url: str, filename: str) -> None:
 	img = qrcode.make(url)
-	img.save(STATIC_DIR / filename)  # type: ignore[arg-type]  # False positive
+	img.save(IMAGES_DIR / filename)  # type: ignore[arg-type]  # False positive
