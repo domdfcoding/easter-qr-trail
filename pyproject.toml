@@ -63,3 +63,10 @@ reformat = true
 
 [tool.dep_checker]
 allowed_unused = [ "gunicorn",]
+
+[tool.djlint]
+profile = "jinja"
+extension = "html"
+preserve_blank_lines = true
+ignore = "H029,H031,H006,H030,H025,H013,J018,T028"
+max_attribute_length = 80

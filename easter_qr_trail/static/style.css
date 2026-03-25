@@ -1,16 +1,13 @@
 body {
 	width: 80%;
 	height: 100vh;
+
 	/* margin: auto; */
 	margin: 5;
 }
 
 .container {
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-	-moz-column-count: 3; /* Firefox */
 	column-count: 3;
-	-webkit-column-gap: 10px; /* Chrome, Safari, Opera */
-	-moz-column-gap: 10px; /* Firefox */
 	column-gap: 10px;
 	padding: 10px;
 }
