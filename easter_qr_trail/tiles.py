@@ -53,7 +53,8 @@ def _split_image(source_image: PathLike, rows: int, cols: int, suffix: str) -> N
 	source_image_stem = os.path.splitext(source_image)[0]
 
 	for filename in IMAGES_DIR.glob(f"{source_image_stem}*"):
-		filename.rename(filename.parent / filename.name.replace(f"{source_image_stem}_", suffix))
+		new_filename = filename.parent.joinpath(filename.name.replace(f"{source_image_stem}_", suffix))
+		filename.rename(new_filename.with_suffix(".jpeg"))
 
 
 def generate_tiles(source_image: PathLike) -> None:
